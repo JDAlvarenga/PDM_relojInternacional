@@ -27,10 +27,12 @@
     <!-- Linea Horizontal -->
     <View
         android:id="@+id/view_linea_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="2dp"
+        android:layout_width="2dp"
+        android:layout_height="55dp"
+
         android:background="#000"
         android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
         android:layout_below="@id/text_ciudad_principal"/>
 
     <!-- Horas de ciudad -->
@@ -38,9 +40,8 @@
         android:id="@+id/linear_city1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@id/view_linea_horizontal"
-        android:layout_alignLeft="@id/view_linea_horizontal"
-        android:layout_below="@id/view_linea_horizontal">
+        android:paddingHorizontal="12dp"
+        android:layout_below="@id/text_ciudad_principal">
 
         <TextView
             android:layout_width="0dp"
@@ -60,8 +61,7 @@
         android:id="@+id/linear_city2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@id/view_linea_horizontal"
-        android:layout_alignLeft="@id/view_linea_horizontal"
+        android:paddingHorizontal="12dp"
         android:layout_below="@id/linear_city1">
 
         <TextView
@@ -82,8 +82,7 @@
         android:id="@+id/linear_city3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@id/view_linea_horizontal"
-        android:layout_alignLeft="@id/view_linea_horizontal"
+        android:paddingHorizontal="12dp"
         android:layout_below="@id/linear_city2">
 
         <TextView
